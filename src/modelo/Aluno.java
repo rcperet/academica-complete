@@ -20,7 +20,8 @@ public class Aluno {
 	}
 
 	public void setMatricula(int matricula) {
-		this.matricula = matricula;
+		if (matricula > 0)
+		    this.matricula = matricula;
 	}
 
 	public String getNome() {
@@ -28,7 +29,9 @@ public class Aluno {
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		if !(nome.isEmpty()){
+		    this.nome = nome;
+		}
 	}
 
 	
